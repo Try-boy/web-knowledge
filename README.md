@@ -22,7 +22,7 @@
 
     - [Vue-cli搭建](./vue/vue-cli.md)
     - [Vue不是内部或外部命令，也不是可执行的程序或批处理文件](./vue/vue不是内部或外部命令，也不是可执行的程序或批处理文件.md)
-    - [Vue中npm run build报“Error in parsing SVG: Unquoted attribute value”](./vue/Error in parsing SVG Unquoted attribute value.md)
+    - [Vue中npm run build报“Error in parsing SVG: Unquoted attribute value”](https://github.com/isboyjc/web-knowledge/blob/master/vue/Error%20in%20parsing%20SVG%20Unquoted%20attribute%20value.md)
     - [Vue打包后index.html中无引号报错解决](./vue/Vue打包后index.html中无引号.md)
     - [Vue打包后静态资源路径错误解决](./vue/Vue打包后静态资源路径错误.md)
   - flutter
