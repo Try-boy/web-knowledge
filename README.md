@@ -25,6 +25,7 @@
     - [Vue中npm run build报“Error in parsing SVG: Unquoted attribute value”](https://github.com/isboyjc/web-knowledge/blob/master/vue/Error%20in%20parsing%20SVG%20Unquoted%20attribute%20value.md)
     - [Vue打包后index.html中无引号报错解决](./vue/Vue打包后index.html中无引号.md)
     - [Vue打包后静态资源路径错误解决](./vue/Vue打包后静态资源路径错误.md)
+    - [Vue基础面试题](./vue/Vue基础面试题.md)
   - flutter
     - 暂无
   - Git
