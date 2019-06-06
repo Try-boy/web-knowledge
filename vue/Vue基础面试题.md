@@ -233,6 +233,8 @@ addRoutes
 
 ```js
 vue中状态管理器，实现组件间的数据共享
+通过状态（数据源）集中管理驱动组件的变化，应用级的状态集中放在store中； 改变状态的方式是提交mutations，这是个同步的事物； 异步逻辑应该封装在action中
+在main.js引入store，注入。新建了一个目录store，... export
 ```
 
 
