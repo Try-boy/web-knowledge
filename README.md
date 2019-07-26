@@ -29,7 +29,7 @@
     - 暂无
   - Git
 
-    - [Git常用命令](https://github.com/isboyjc/web-knowledge/blob/master/git.md)
+    - [Git常用命令](./git/git.md)
   - JQuery
     - [被摒弃的jQuery](./jquery/Rejected-jquery.md)
   - 其他
