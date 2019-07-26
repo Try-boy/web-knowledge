@@ -17,7 +17,6 @@
 
     - [function与感叹号](./javascript/function&!.md)
     - [JS常用内置API](./javascript/JSAPI.md)
-    - [ES6语法简述-un](./javascript/ES6.md)
   - VUE
 
     - [Vue-cli搭建](./vue/vue-cli.md)
