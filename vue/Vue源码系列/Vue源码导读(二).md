@@ -1,4 +1,4 @@
-# Vue源码导读(二)--搭建调试环境
+# Vue源码导读(二)--调试环境搭建
 
 
 
@@ -8,11 +8,17 @@
 
 vue是基于rollup构建的 , 所以如果没有安装rollup , 要先安装rollup
 
-npm安装 : `npm i -g rollup`
+npm安装rollop : `npm i -g rollup`
 
 
 
-### 生成SourceMap
+**注：**rollup是一个Js模块打包器 , rollup也可以打包项目, 不过这不是它擅长的, 他不支持热模块替换, 它最擅长的是打包js , rollup 对于代码的 tree-shaking 和 es6模块有算法优势的支持, 所以一些类库都在使用它(vue , react等) ,  继grunt、gulp实现自动化构建之后，webpack引领了前端打包潮流，vue-cli的脚手架就是基于webpack进行项目打包的。而webpack还在上升的势头的时候，又出了一个打包神器parcel , 市面上常用的一些打包工具都在这里了, 具体差异 , 自行百度吧
+
+
+
+### 调试环境搭建
+
+##### 生成SourceMap(源码映射)
 
 修改`package.json`中dev脚本 , 加上`--sourcemap` 
 
@@ -57,7 +63,7 @@ const IS_WINDOWS = os.platform() === 'win32';
 
 
 
-### 创建调试文件
+##### 创建调试文件
 
 创建调试文件`index.html`如下
 
