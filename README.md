@@ -27,7 +27,8 @@
     - Practical
       - [Vue项目中优雅使用icon](./vue/Vue项目中优雅使用icon.md)
     - SourceCode
-      - [Vue源码系列一]()
+      - [Vue源码导读(一)--目录结构概览](./vue/Vue源码系列/Vue源码导读(一)--目录结构概览.md)
+      - [Vue源码导读(二)--调试环境搭建](./vue/Vue源码系列/Vue源码导读(二)--调试环境搭建.md)
     - Other
       - [Vue基础面试题](./vue/Vue基础面试题.md)
   - flutter
