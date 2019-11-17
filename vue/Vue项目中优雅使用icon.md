@@ -38,9 +38,6 @@ CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件
 
 拿iconfont来说，它有三种使用方式，分别是`unicode，font-class，symbol`，都非常简单
 
-font-class
-
-symbol
 
 当然，没有使用过的小伙伴直接百度搜索关键词iconfont使用，相信看一看就会了
 
@@ -223,6 +220,14 @@ yarn add svg-sprite-loader -D
 我们要怎么使用它呢，首先我们不能覆盖原有的svg解析loader，我们只需要把`icons/svg`这个文件夹下的svg文件解析打包即可，我们在`vue.config.js`中chainWebpack函数中配置，来看代码
 
 ```js
+// 内置路径包
+const path = require("path");
+
+// 定义resolve方法，获取绝对路径
+function resolve(dir) {
+  return path.join(__dirname, dir);
+}
+
 module.exports = {
   // 一个函数，会接收一个基于 webpack-chain 的 ChainableConfig 实例
   // 允许对内部的 webpack 配置进行更细粒度的修改
@@ -250,6 +255,8 @@ module.exports = {
 如果我们不清楚cli的默认配置，怕改错，可通过vue inspect审查webpack内部配置，详细请看： [inspect使用](*https://cli.vuejs.org/zh/guide/webpack.html#%E5%AE%A1%E6%9F%A5%E9%A1%B9%E7%9B%AE%E7%9A%84-webpack-%E9%85%8D%E7%BD%AE*)
 
 上面代码中我们使用了webpack的链式高级用法来处理loader，首先排除了默认svg的loader对我们`icons/`目录下svg文件的处理，然后新增了一个规则让`svg-sprite-loader`处理我们`icons/`文件夹下的svg文件，最后我们设置了`icon-`加上经过处理的svg文件名作为symbolId，也就是说我们在使用`qq.svg`时可以直接在use标签使用`#icon-qq`，关于链式操作不了解的小伙伴可以看: [链式操作(高级)]([https://cli.vuejs.org/zh/guide/webpack.html#%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C-%E9%AB%98%E7%BA%A7](https://cli.vuejs.org/zh/guide/webpack.html#链式操作-高级)) 
+
+代码中我们引入了`path`这样一个内置的包，定义了一个`resolve`方法，该方法主要是来获取文件绝对路径的，我们把使用路径的地方都使用该方法转为绝对路径，当然使用相对路径也是可以的，但是不太安全，平台解析相对路径有差异性，所以绝对路径是最安全的
 
 
 
