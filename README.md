@@ -5,7 +5,7 @@
 
 - 也是博客文章的源码库
 
-- 你也可以在博客上浏览这些文章[简书传送门](https://www.jianshu.com/u/fe7819267ca1)
+- 你也可以在博客上浏览这些文章[简书传送门](https://www.jianshu.com/u/fe7819267ca1) [掘金传送门](https://juejin.im/user/5cdc302f6fb9a032155705c4/posts)
 
 - 每周不定时更新
 
@@ -41,4 +41,6 @@
   - 其他
 
     - [GitHub免费搭建个人网站](./else/Website-construction.md)
+    
+    - [一个前端的安利](./else/anli.md)
 
